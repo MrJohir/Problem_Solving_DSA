@@ -1,0 +1,9 @@
+# Ignore compiled files
+*.exe
+
+# Ignore output files
+output.txt
+
+# Optional (good practice)
+*.out
+*.o
