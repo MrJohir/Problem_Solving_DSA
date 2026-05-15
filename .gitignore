@@ -1,5 +1,6 @@
 # Compiled files
 *.exe
+.cph
 
 # Input/Output files
 input.txt
