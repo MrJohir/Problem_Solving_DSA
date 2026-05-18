@@ -1,33 +1,26 @@
-#include <stdio.h>
-#include <limits.h>
+#include<stdio.h>
+#include<limits.h>
 
-void Max_Min(int x, int a[])
-{
-    int min = INT_MAX;
-    int max = INT_MIN;
-    for (int i = 0; i < x; i++)
-    {
-        if (a[i] < min)
-        {
-            min = a[i];
+void MaxAndMin(int n, int a[]){
+    int min=INT_MAX;
+    int max=INT_MIN;
+    for(int i=0; i<n; i++){
+        if(a[i]<min){
+            min=a[i];
         }
-        if (a[i] > max)
-        {
-            max = a[i];
+        if(a[i]>max){
+            max=a[i];
         }
     }
-    printf("%d %d", min, max);
+    printf("%d %d", min,max);
 }
 
-int main()
-{
-    int x;
-    scanf("%d", &x);
-    int a[x];
-
-    for (int i = 0; i < x; i++)
-    {
+int main(){
+    int n;
+    scanf("%d", &n);
+    int a[n];
+    for(int i=0; i<n; i++){
         scanf("%d", &a[i]);
     }
-    Max_Min(x, a);
+    MaxAndMin(n,a);
 }
